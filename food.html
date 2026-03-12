@@ -5,51 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karibu Restaurant</title>
 </head>
+<style>
+    h3{
+        color: navy;
+    }
+    body{
+        background-color: green;
+    }
+    .section_1{
+        background-color: blue;
+    }
+    .section_2{
+        background-color: lightblue;
+    }
+    .section_3{
+        background-color: lightyellow;
+    }
+    .form_reservation{
+        border-color: black;
+        border-width: 2px;
+        border-style: solid;
+    }
+</style>
 <body>
-    <h1><b>Karibu Restaurant</b></h1>
-    <img src="Restaurant.jpeg" alt="The restaurant" width="500" height="300">
+    <h1 style="color: blue; font-size: 50px; font-weight: 40; text-align: center;"><b>Karibu Restaurant</b></h1>
+    <div style="text-align: center;"><img src="Restaurant.jpeg" alt="The restaurant" width="500" height="300"></div>
     <p>Welcome to Karibu Restaurant. We serve delicious meals prepared with fresh ingredients. Our <br> brand menu includes traditional and modern dishes for everyone to enjoy.
 </p>
 
-<h2><b>Our Menu</b></h2>
-<table border="1">
-    <tr>
-        <th>Meal</th>
-        <th>Description</th>
-        <th>Price</th>
-    </tr>
-    <tr>
-        <td>Ugali & Sukuma</td>
-        <td> Ugali served with fried sukuma wiki</td>
-        <td>150</td>
-    </tr>
-    <tr>
-        <td>Pilau</td>
-        <td> Spiced rice cooked with beef </td>
-        <td>300</td>
-    </tr>
-    <tr>
-        <td>Chicken & Chips </td>
-        <td>Fried chicken served with french fries</td>
-        <td>450</td>
-    </tr>
-    <tr>
-        <td>Chapati & Beans</td>
-        <td>Soft chapati served with stewed beans</td>
-        <td>200</td>
-
-    </tr>
-
-</table>
-<h3><b>Popular Items</b></h3>
-<ol>
-    <li>Pilau</li>
-    <li>Chicken & Chips</li>
-    <li>Ugali & Sukuma</li>
-    <li>Chapati & Beans</li>
-</ol>
-<h3><b>Customer Login</b></h3>
-<form>
+<h2 style="color: navy; text-align: center;"><b>Our Menu</b></h2>
+<div class="section_1">
+    <table border="1" style="background-color: limegreen;">
+        <tr>
+            <th>Meal</th>
+            <th>Description</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>Ugali & Sukuma</td>
+            <td> Ugali served with fried sukuma wiki</td>
+            <td>150</td>
+        </tr>
+        <tr>
+            <td>Pilau</td>
+            <td> Spiced rice cooked with beef </td>
+            <td>300</td>
+        </tr>
+        <tr>
+            <td>Chicken & Chips </td>
+            <td>Fried chicken served with french fries</td>
+            <td>450</td>
+        </tr>
+        <tr>
+            <td>Chapati & Beans</td>
+            <td>Soft chapati served with stewed beans</td>
+            <td>200</td>
+    
+        </tr>
+    
+    </table>
+</div>
+<div class="section_2">
+    <h3 style="color: navy; text-align: center;"><b>Popular Items</b></h3>
+    <ol>
+        <li>Pilau</li>
+        <li>Chicken & Chips</li>
+        <li>Ugali & Sukuma</li>
+        <li>Chapati & Beans</li>
+    </ol>
+</div>
+<h3 style="color: navy; text-align: center;"><b>Customer Login</b></h3>
+<form style="background-color: lightgreen;" class="form_reservation">
     <label for="U.N">User Name: <br></label><br>
     <input type="text" name="User name" id="U.N"><br>
 
@@ -57,25 +83,28 @@
     <input type="password" name="Password" id="P.W"><br>
     
     <br><button>Login</button>
-</form>
-<h3><b>Make a reservation</b></h3>
-<form>
-    <label for="N">Name: <br></label><br>
-    <input type="text" name="Name" id="N"><br>
-
-    <label for="@">Email: <br></label><br>
-    <input type="email" name="Email" id="@"><br>
-
-    <label for="N.G">Number of Guests: <br></label><br>
-    <input type="number" name="Number of Guests" id="N.G"><br>
-
-    <label for="D">Date: <br></label><br>
-    <input type="date" name="Date" id="D"><br>
-
-   <br> <button>Make Reservation</button>
-
-</form>
+<div class="section_3">
+    </form>
+    <h3 style="color: navy; text-align: center;"><b>Make a reservation</b></h3>
+    <form style="background-color: lightgreen;">
+        <label for="N">Name: <br></label><br>
+        <input type="text" name="Name" id="N"><br>
+    
+        <label for="@">Email: <br></label><br>
+        <input type="email" name="Email" id="@"><br>
+    
+        <label for="N.G">Number of Guests: <br></label><br>
+        <input type="number" name="Number of Guests" id="N.G"><br>
+    
+        <label for="D">Date: <br></label><br>
+        <input type="date" name="Date" id="D"><br>
+    
+       <br> <button>Make Reservation</button>
+    
+    </form>
+</div>
 <a href="Services.html">Our Services</a>
+<a href="Care.html">Customer Care</a>
 
 </body>
 </html>
